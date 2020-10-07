@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Script mount</title>
+</head>
+<body>
+
+<div id="app">
+  Message: {{ message }}
+</div>
+
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+    const App = {
+        data() {
+            return {
+                message: 'Hello world'
+            }
+        }
+    }
+
+    Vue.createApp(App).mount('#app')
+</script>
+</body>
+</html>
